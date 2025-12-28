@@ -73,37 +73,78 @@
     <div class="menu-overlay" onclick="toggleMenu()"></div>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <div class="mobile-menu-header">
-            <img src="gps.jpg" alt="GPA Logo">
-            <h3>GPA SILKS</h3>
-            <span class="brand-line"></span>
+    <!-- FIXED MOBILE MENU STRUCTURE -->
+
+<div class="mobile-menu">
+    <!-- Header Section -->
+    <div class="mobile-menu-header">
+        <!-- ✅ ADD THIS CLOSE BUTTON -->
+        <button class="menu-close-btn" onclick="toggleMenu()" aria-label="Close menu"></button>
+        
+        <img src="gps.jpg" alt="GPA Silks Logo">
+        <h3>GPA SILKS</h3>
+        <span class="brand-line"></span>
             <p style="font-size: 1.1rem; letter-spacing: 2px; margin-top: 0.5rem;">Silks & Readymades</p>
             <p style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.5rem;">Where Tradition Meets Elegance</p>
-        </div>
+    </div>
+    
+
+    <!-- ✅ WRAP LINKS AND SOCIAL IN THIS SCROLLABLE CONTAINER -->
+    <div class="mobile-menu-content">
         <div class="mobile-menu-links">
-            <a href="#about" onclick="toggleMenu()"><i class="fas fa-info-circle"></i><span>About Us</span></a>
-            <a href="#collections" onclick="toggleMenu()"><i class="fas fa-shopping-bag"></i><span>Our
-                    Collections</span></a>
-            <a href="#services" onclick="toggleMenu()"><i class="fas fa-concierge-bell"></i><span>Services</span></a>
-            <a href="#why-choose" onclick="toggleMenu()"><i class="fas fa-star"></i><span>Why Choose Us</span></a>
-            <a href="#testimonials" onclick="toggleMenu()"><i class="fas fa-comments"></i><span>Testimonials</span></a>
-            <a href="#location" onclick="toggleMenu()"><i class="fas fa-map-marked-alt"></i><span>Location</span></a>
-            <a href="https://www.google.com/maps/dir//261%2F119,+Bazaar+St,+T.Gopurapuram,+Virudhachalam,+Tamil+Nadu+606001/@11.5103806,79.3224157,17z"
-                target="_blank"><i class="fas fa-directions"></i><span>Get Directions</span></a>
+            <a href="#about">
+                <i class="fas fa-info-circle"></i>
+                About Us
+            </a>
+            <a href="#collections">
+                <i class="fas fa-shopping-bag"></i>
+                Our Collections
+            </a>
+            <a href="#services">
+                <i class="fas fa-concierge-bell"></i>
+                Services
+            </a>
+            <a href="#why-choose">
+                <i class="fas fa-star"></i>
+                Why Choose Us
+            </a>
+            <a href="#testimonials">
+                <i class="fas fa-comments"></i>
+                Testimonials
+            </a>
+            <a href="#location">
+                <i class="fas fa-map-marker-alt"></i>
+                Location
+            </a>
+            <a href="https://maps.google.com/?q=GPA+Silks" target="_blank">
+                <i class="fas fa-directions"></i>
+                Get Directions
+            </a>
         </div>
+
+        <!-- Connect With Us Section (Now Scrollable!) -->
         <div class="mobile-social">
             <h4>Connect With Us</h4>
             <div class="mobile-social-links">
-                <a href="https://www.instagram.com/gpa_silks/" target="_blank" title="Instagram"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/people/Gpa-Silks-Virudhachalam/61567143842005/" target="_blank"
-                    title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://wa.me/919443756367" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="tel:9443756367" title="Call"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Overlay (for closing menu when clicking outside) -->
+<div class="menu-overlay" onclick="toggleMenu()"></div>
 
     <!-- Hero Section -->
     <section class="hero">
