@@ -1,8 +1,10 @@
-  * {
+ 
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
 
         :root {
             --primary: #8B4513;
@@ -219,21 +221,34 @@
             transform: rotate(-45deg) translate(7px, -7px);
         }
 
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 350px;
-            height: 100vh;
-            background: white;
-            box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: right 0.4s ease;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-         
-        }
+       .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+/* Allow scroll inside menu container */
+.mobile-menu-links {
+    padding: 2rem;
+    overflow-y: visible;
+}
+
+
 
         .mobile-menu.active {
             right: 0;
@@ -329,10 +344,6 @@
                 width: 100px;
                 opacity: 1;
             }
-        }
-
-        .mobile-menu-links {
-            padding: 2rem;
         }
 
         .mobile-menu-links a {
